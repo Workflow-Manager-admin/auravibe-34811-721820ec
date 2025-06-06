@@ -155,7 +155,188 @@ html {
   min-height: 0;
 }
 
-.av-stories-carousel {
+/* FEED SECTION: Scrollable feed below stories */
+.av-feed-container {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1rem;
+  margin: 1rem auto 1rem auto;
+  overflow-y: auto;
+  max-height: 62vh;
+  padding-bottom: 0.7rem;
+  scrollbar-width: thin;
+  scrollbar-color: #29293e #1a1a1a;
+}
+
+/* Elegant Feed Card/Post Styling */
+.av-feed-post {
+  background: linear-gradient(115deg, #181820 93%, #353552 100%);
+  border-radius: 1.29em;
+  box-shadow: 0 4px 24px 0 #0e0e0f33, 0 1.5px 7px #23234126;
+  padding: 2.7rem 2.2rem 2.1rem 2.1rem;
+  color: var(--text-white);
+  font-family: var(--font-main);
+  transition: box-shadow 0.19s, transform 0.13s;
+  position: relative;
+  margin: 0 auto;
+  min-height: 110px;
+  border: 1.2px solid var(--border);
+  cursor: default;
+}
+
+.av-feed-post:hover {
+  box-shadow: 0 8px 30px #48489638, 0 2px 12px #9ddfdc17;
+  transform: translateY(-2px) scale(1.021);
+  border-color: #232341cc;
+}
+
+.av-feed-post-header {
+  display: flex;
+  align-items: center;
+  gap: 0.71em;
+  margin-bottom: 0.29em;
+  font-size: 1.14rem;
+  color: #86dad7;
+}
+
+.av-feed-avatar {
+  width: 2.34em;
+  height: 2.34em;
+  font-size: 1.52em;
+  background: linear-gradient(135deg, #39393d 70%, #b2e6ea44 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px #90e0ef22, 0 3px 9px #19193315;
+  border: 1.2px solid #28283e;
+  margin-right: 0.23em;
+}
+
+.av-feed-author {
+  font-weight: 700;
+  font-size: 1.08em;
+  letter-spacing: .01em;
+  background: linear-gradient(90deg, #73e6d9 10%, #c0bec5 90%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.av-feed-dot {
+  color: #cecece42;
+  font-size: 1.1em;
+  margin: 0 0.28em;
+}
+
+.av-feed-time {
+  font-size: 0.96em;
+  color: #bdfdfb87;
+  font-weight: 400;
+}
+
+.av-feed-post-body {
+  margin-bottom: 1.15em;
+  margin-top: 0.35em;
+  font-size: 1.26rem;
+  color: #fefefecf;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-family: var(--font-main);
+  text-shadow: 0 1.5px 12px #12122d45;
+}
+
+.av-feed-post-footer {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.8em;
+  color: #a2cacd;
+  font-size: 1.17rem;
+  user-select: none;
+}
+
+.av-feed-action {
+  display: flex;
+  align-items: center;
+  gap: 0.22em;
+  font-weight: 500;
+  border-radius: 100px;
+  padding: 0.13em 0.7em 0.13em 0.45em;
+  cursor: pointer;
+  transition: background 0.17s;
+}
+
+.av-feed-action:hover {
+  background: #24244dc2;
+  color: #ffeacd;
+  filter: drop-shadow(0 2px 8px #fff1b344);
+}
+
+.av-feed-action[aria-label="like"] {
+  color: #ffc3ba;
+}
+.av-feed-action[aria-label="like"]:hover {
+  background: #39232bcc;
+  color: #fff7ee;
+}
+.av-feed-action[aria-label="comment"] {
+  color: #b9dbf7;
+}
+.av-feed-action[aria-label="save"] {
+  color: #e3c6ee;
+}
+.av-feed-action[aria-label="save"]:hover {
+  background: #282031cc;
+}
+
+.av-feed-container,
+.av-feed-post,
+.av-feed-post-header,
+.av-feed-post-footer,
+.av-feed-post-body {
+  font-family: var(--font-main);
+}
+
+/* Hide scrollbar for non-webkit browsers for cleaner look */
+.av-feed-container {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2a40 #181820;
+}
+.av-feed-container::-webkit-scrollbar {
+  height: 0.5em;
+  width: 0.29em;
+  background: #181820;
+  border-radius: 12px;
+}
+.av-feed-container::-webkit-scrollbar-thumb {
+  background: #282854;
+  border-radius: 12px;
+}
+
+.av-feed-container::-webkit-scrollbar-track {
+  background: #181820;
+}
+
+/* Responsive adjustments for feed post styles */
+@media (max-width: 600px) {
+  .av-feed-main,
+  .av-feed-card,
+  .av-stories-placeholder,
+  .av-feed-container,
+  .av-feed-post {
+    padding-left: 0.09rem;
+    padding-right: 0.09rem;
+  }
+  .av-feed-post {
+    padding: 1.1rem 0.8rem 1.2rem 0.9rem;
+  }
+}
+
+/* ...EXISTING... */
   width: 100%;
   max-width: 600px;
   margin: 0 auto 1.6rem auto;
@@ -165,7 +346,6 @@ html {
   align-items: center;
   overflow-x: auto;
   border-bottom: 1px solid var(--border);
-}
 
 .av-stories-placeholder {
   width: 100%;

@@ -52,9 +52,75 @@ function App() {
             <div className="av-stories-placeholder">Stories Carousel (placeholder)</div>
           </section>
           
-          {/* Main Feed Placeholder */}
-          <section className="av-feed-placeholder" aria-label="Feed">
-            <div className="av-feed-card">Main Feed Area (placeholder)</div>
+          {/* Main Feed: Elegant Sample Posts */}
+          <section className="av-feed-container" aria-label="Feed">
+            <div className="av-feed-post">
+              <div className="av-feed-post-header">
+                <span className="av-feed-avatar" aria-label="avatar">🦋</span>
+                <span className="av-feed-author">aura_artist</span>
+                <span className="av-feed-dot">·</span>
+                <span className="av-feed-time">2h ago</span>
+              </div>
+              <div className="av-feed-post-body">
+                Glowing with midnight energy 🌌✨ – set your intentions and let your aura shine.
+              </div>
+              <div className="av-feed-post-footer">
+                <span className="av-feed-action" aria-label="like">❤️ 24</span>
+                <span className="av-feed-action" aria-label="comment">💬 6</span>
+                <span className="av-feed-action" aria-label="save">🔖</span>
+              </div>
+            </div>
+
+            <div className="av-feed-post">
+              <div className="av-feed-post-header">
+                <span className="av-feed-avatar" aria-label="avatar">🌙</span>
+                <span className="av-feed-author">night.muse</span>
+                <span className="av-feed-dot">·</span>
+                <span className="av-feed-time">32m ago</span>
+              </div>
+              <div className="av-feed-post-body">
+                Tonight's vibe: violet calm layered with hopes for tomorrow. Dream big, dream in color.
+              </div>
+              <div className="av-feed-post-footer">
+                <span className="av-feed-action" aria-label="like">💜 18</span>
+                <span className="av-feed-action" aria-label="comment">💬 2</span>
+                <span className="av-feed-action" aria-label="save">🔖</span>
+              </div>
+            </div>
+
+            <div className="av-feed-post">
+              <div className="av-feed-post-header">
+                <span className="av-feed-avatar" aria-label="avatar">🪐</span>
+                <span className="av-feed-author">cosmic_flow</span>
+                <span className="av-feed-dot">·</span>
+                <span className="av-feed-time">1h ago</span>
+              </div>
+              <div className="av-feed-post-body">
+                Aura check: turquoise bursts and silver linings. Sending all those cosmic waves your way!
+              </div>
+              <div className="av-feed-post-footer">
+                <span className="av-feed-action" aria-label="like">💫 33</span>
+                <span className="av-feed-action" aria-label="comment">💬 9</span>
+                <span className="av-feed-action" aria-label="save">🔖</span>
+              </div>
+            </div>
+
+            <div className="av-feed-post">
+              <div className="av-feed-post-header">
+                <span className="av-feed-avatar" aria-label="avatar">🌺</span>
+                <span className="av-feed-author">serene.bloom</span>
+                <span className="av-feed-dot">·</span>
+                <span className="av-feed-time">8m ago</span>
+              </div>
+              <div className="av-feed-post-body">
+                Deep breaths, soft light, gentle souls—your aura radiates beauty. 🌸
+              </div>
+              <div className="av-feed-post-footer">
+                <span className="av-feed-action" aria-label="like">🌷 9</span>
+                <span className="av-feed-action" aria-label="comment">💬 0</span>
+                <span className="av-feed-action" aria-label="save">🔖</span>
+              </div>
+            </div>
           </section>
         </main>
 
