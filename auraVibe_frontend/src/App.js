@@ -8,7 +8,7 @@ const NAV_ITEMS = [
   { name: "Messages", icon: "💬" },
   { name: "Notifications", icon: "🔔" },
   { name: "Profile", icon: "👤" },
-  { name: "Admin", icon: "🛠️" },
+  { name: "Settings", icon: "🛠️" }, // Changed from "Admin" to "Settings"
 ];
 
 // PUBLIC_INTERFACE
