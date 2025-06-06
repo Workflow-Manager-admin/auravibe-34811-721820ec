@@ -24,7 +24,7 @@ function App() {
       <header className="av-header">
         <div className="av-header-logo">
           <span className="av-logo-mark">🧿</span>
-          <span className="av-logo-text">AuraVibe</span>
+          <span className="av-logo-text">AuraGram</span>
         </div>
         <button className="av-theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
           {dark ? "🌙" : "🌞"}
@@ -62,11 +62,24 @@ function App() {
         <aside className="av-sidebar-right" aria-label="Trending and Suggestions">
           <div className="av-sidebar-section">
             <div className="av-sidebar-title">Trending Hashtags</div>
-            <div className="av-placeholder">#placeholder<br/>#vibe<br/>#auracolor</div>
+            <div className="av-placeholder">
+              #workoutmotivation<br />
+              #healthylifestyle<br />
+              #wellnessjourney<br />
+              #SummerIsHere<br />
+              #love<br />
+              #photooftheday
+            </div>
           </div>
           <div className="av-sidebar-section">
             <div className="av-sidebar-title">Suggested Users</div>
-            <div className="av-placeholder">@user1<br/>@user2<br/>@user3</div>
+            <div className="av-placeholder">
+              @cristiano<br />
+              @selenagomez<br />
+              @leomessi<br />
+              @virat.kohli<br />
+              @kendalljenner
+            </div>
           </div>
         </aside>
       </div>
