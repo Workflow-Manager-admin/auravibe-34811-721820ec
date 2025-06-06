@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import LogoAura from "./LogoAura";
 
 // Placeholder icons via emoji for navigation
 const NAV_ITEMS = [
@@ -23,8 +24,7 @@ function App() {
       {/* Header */}
       <header className="av-header">
         <div className="av-header-logo">
-          <span className="av-logo-mark">🧿</span>
-          <span className="av-logo-text">AuraGram</span>
+          <LogoAura size={40} accent="#c0bec5" />
         </div>
         <button className="av-theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
           {dark ? "🌙" : "🌞"}
